@@ -1,2 +1,3 @@
 # python
-## Geek Brains course 
+## Geek Brains course lesson 3
+
