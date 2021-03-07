@@ -37,7 +37,7 @@ def currency_rates(money_code, url = 'http://www.cbr.ru/scripts/XML_daily.asp'):
         try:
             money_code = int(money_code)
             str_money_code = "{:03}".format(money_code)
-            print(str_money_code)
+            #print(str_money_code)
             in_valute = content.find("<NumCode>" + str_money_code)          # Valute pointer
         except:
             str_money_code = money_code.upper()
