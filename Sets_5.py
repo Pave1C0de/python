@@ -13,13 +13,5 @@ src_non_recurring = [el for el in src if src.count(el) == 1] # не очень �
 print(src_non_recurring)
 
 
-result = list()
-full_set = set(src)
-for el in src:
-    src_cpy = src.copy()
-    src_cpy.remove(el)
-    cmp_set = set(src_cpy)
-    if full_set != cmp_set:
-        result.append(el)
+result = [src[i] for i in range(len(src)) if set(src) != set(src[:i] + src[i+1:])]
 print(result)
-
